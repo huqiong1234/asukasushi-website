@@ -1,96 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Asuka Sushi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://www.17sucai.com/2022/4/xlmmk12262/img/fav.png">
+    <meta name="author" content="colorlib">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Asuka Sushi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        section {
-            margin: 20px;
-        }
-        .menu {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .menu-item {
-            background-color: #fff;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            width: 200px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/linearicons.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.css">
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="static/css/css.css" rel="stylesheet">
+    <link href="static/css/css2.css" rel="stylesheet">
 </head>
+
 <body>
-
-<header>
-    <h1>Our Menu</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<section>
-    <div class="menu">
-        <div class="menu-item">
-            <h3>Sushi Platter</h3>
-            <p>Assorted sushi rolls and nigiri</p>
-            <p><strong>$25.00</strong></p>
+    <script src="static/js/console-ban.min.js"></script>
+    <header id="header">
+        <div class="container main-menu">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12"><a class="navbar-brand"
+                        href="index.html">Asuka Sushi</a></div>
+                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                    <div class="row align-items-center justify-content-center d-flex">
+                        <nav id="nav-menu-container">
+                            <ul class="nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="">Menu</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- #nav-menu-container -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <h3>Ramen</h3>
-            <p>Rich, flavorful Japanese noodles</p>
-            <p><strong>$12.00</strong></p>
+    </header><!-- #header --><!-- start banner Area -->
+    <section class="about-banner relative">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">Menus </h1>
+                    <p class="text-white link-nav"><a href="index.html">Home </a><span
+                            class="lnr lnr-arrow-right"></span><a href="">Menus</a></p>
+                </div>
+            </div>
         </div>
-        <div class="menu-item">
-            <h3>Tempura</h3>
-            <p>Crispy, lightly battered seafood and vegetables</p>
-            <p><strong>$18.00</strong></p>
+    </section><!-- End banner Area --><!-- Start Menu Area -->
+    <section class="menu-area section-gap" id="menu">
+        <div class="container-fluid">
+            <ul class="filter-wrap filters col-lg-12 no-padding">
+                <li class="active" data-filter="*">All Menu</li>
+                <li data-filter=".donburi">Donburi (Rice Bowls)</li>
+                <li data-filter=".teppanyaki">Teppanyaki (Grilled Dishes)</li>
+                <li data-filter=".noodles">Noodles</li>
+                <li data-filter=".appetizers">Appetizers, Bento & Platters</li>
+            </ul>
         </div>
-    </div>
-</section>
+        <div class="container">
+            <div class="filters-content">
+                <div class="row grid">
 
-<footer>
-    <p>&copy; 2024 Asuka Sushi. All rights reserved.</p>
-</footer>
+                    <!-- Donburi (Rice Bowls) -->
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/9 katsu-don.jpeg" alt="Oyako Don"></div>
+                            <h4>Katsu Don</h4>
+                        </div>
+                    </div>
 
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/10 oyako-don.jpeg" alt="Oyako Don"></div>
+                            <h4>Oyako Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/11 gyu-don.jpeg" alt="Gyu Don"></div>
+                            <h4>Gyu Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/12 unagi-don.jpeg" alt="Unagi Don"></div>
+                            <h4>Unagi Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/13 gyu tan-don.jpeg" alt="Gyu Tan Don">
+                            </div>
+                            <h4>Gyu Tan Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/14 ten-don.jpeg" alt="Ten Don"></div>
+                            <h4>Ten Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/15 special yakitori-don.jpeg"
+                                    alt="Special Yakitori Don"></div>
+                            <h4>Special Yakitori Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/16 teriyaki chicken-don.jpeg"
+                                    alt="Teriyaki Chicken Don"></div>
+                            <h4>Teriyaki Chicken Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/17 katsu curry don.jpeg"
+                                    alt="Katsu Curry Don"></div>
+                            <h4>Katsu Curry Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/18 chicken curry-don.jpeg"
+                                    alt="Chicken Curry Don"></div>
+                            <h4>Chicken Curry Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/19 prawn curry-don.jpeg"
+                                    alt="Prawn Curry Don"></div>
+                            <h4>Prawn Curry Don</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all donburi">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/20 tofu curry-don.jpeg"
+                                    alt="Tofu Curry Don"></div>
+                            <h4>Tofu Curry Don</h4>
+                        </div>
+                    </div>
+
+                    <!-- Teppanyaki (Grilled Dishes) -->
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/32 beef teppanyaki set.jpeg"
+                                    alt="Beef Teppanyaki Set"></div>
+                            <h4>Beef Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/33 chicken teppanyaki set.jpeg"
+                                    alt="Chicken Teppanyaki Set"></div>
+                            <h4>Chicken Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/34 prawn teppanyaki set.jpeg"
+                                    alt="Prawn Teppanyaki Set"></div>
+                            <h4>Prawn Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/35 calamari teppanyaki set.jpeg"
+                                    alt="Calamari Teppanyaki Set"></div>
+                            <h4>Calamari Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/36 salmon teppanyaki set.jpeg"
+                                    alt="Salmon Teppanyaki Set"></div>
+                            <h4>Salmon Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/37 seafood teppanyaki set.jpeg"
+                                    alt="Seafood Teppanyaki Set"></div>
+                            <h4>Seafood Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/38 tofu teppanyaki set.jpeg"
+                                    alt="Tofu Teppanyaki Set"></div>
+                            <h4>Tofu Teppanyaki Set</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all teppanyaki">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/39 fried teppan rice.jpeg"
+                                    alt="Fried Teppan Rice"></div>
+                            <h4>Fried Teppan Rice</h4>
+                        </div>
+                    </div>
+
+                    <!-- Noodles -->
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/21-Yasai Udon.jpeg" alt="Yasai Udon"></div>
+                            <h4>Yasai Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/22-Nabeyaki Udon.jpeg" alt="Nabeyaki Udon">
+                            </div>
+                            <h4>Nabeyaki Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/23 nabeyaki udon.jpeg" alt="Nabeyaki Udon">
+                            </div>
+                            <h4>Nabeyaki Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/24-tempura Udon.jpeg" alt="Tempura Udon">
+                            </div>
+                            <h4>Tempura Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/25 niku udon.jpeg" alt="Niku Udon"></div>
+                            <h4>Niku Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/26-Yasai Ramen.jpeg" alt="Yasai Ramen">
+                            </div>
+                            <h4>Yasai Ramen</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/27 kaisen ramen.jpeg" alt="Kaisen Ramen">
+                            </div>
+                            <h4>Kaisen Ramen</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/28-Sapporo Ramen.jpeg" alt="Sapporo Ramen">
+                            </div>
+                            <h4>Sapporo Ramen</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/29-Yaki Soba.jpeg" alt="Yaki Soba"></div>
+                            <h4>Yaki Soba</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/30-Yaki Udon.jpeg" alt="Yaki Udon"></div>
+                            <h4>Yaki Udon</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all noodles">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/31 asuka soba.jpeg" alt="Asuka Soba"></div>
+                            <h4>Asuka Soba</h4>
+                        </div>
+                    </div>
+
+                    <!-- Appetizers, Bento & Platters -->
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/1-Takoyaki.jpeg" alt="Takoyaki"></div>
+                            <h4>Takoyaki</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/2 okonomiyaki.jpeg" alt="Okonomiyaki">
+                            </div>
+                            <h4>Okonomiyaki</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/3 assorted tempura.jpeg"
+                                    alt="Assorted Tempura"></div>
+                            <h4>Assorted Tempura</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/4 gyoza.jpeg" alt="Gyoza"></div>
+                            <h4>Gyoza</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/6 agedashi tofu.jpeg" alt="Agedashi Tofu">
+                            </div>
+                            <h4>Agedashi Tofu</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/6 yakitori.jpeg" alt="Yakitori"></div>
+                            <h4>Yakitori</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/7 harumaki.jpeg" alt="Harumaki"></div>
+                            <h4>Harumaki</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/8 miso soup.jpeg" alt="Miso Soup"></div>
+                            <h4>Miso Soup</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/A vegetable bento box.jpeg"
+                                    alt="Vegetable Bento Box"></div>
+                            <h4>Vegetable Bento Box</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/B teriyaki bento box.jpeg"
+                                    alt="Teriyaki Bento Box"></div>
+                            <h4>Teriyaki Bento Box</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 all appetizers">
+                        <div class="single-menu">
+                            <div class="menu-image"><img src="static/picture/C seafood bento box.jpeg"
+                                    alt="Seafood Bento Box"></div>
+                            <h4>Seafood Bento Box</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- assorted platters menu here -->
+
+    <section class="menu-area section-gap" id="assorted-platters">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="static/picture/assorted platters.png" alt="Assorted Platters" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- End menu-area Area --><!-- Start reservation Area -->
+
+    <footer class="footer-area">
+        <div class="footer-widget-wrap">
+            <div class="container">
+                <div class="row section-gap">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Opening Hours</h4>
+                            <ul class="hr-list">
+                                <li class="d-flex justify-content-between">
+                                    <span>Monday - Friday</span><span>10:00 AM - 2:00 PM</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Saturday</span><span>Closed</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Sunday</span><span>Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Contact Us</h4>
+                            <p>Level 4, Shop 21, 717 Bourke St, Docklands, VIC 3008</p>
+                            <p class="number">Tel: +61 9602 2289</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-wrap">
+            <div class="container">
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-6 col-sm-6 footer-text m-0">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved by Asuka Sushi.
+                    </p>
+                    <ul class="col-lg-4 col-md-6 col-sm-6 social-icons text-right">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+    <script src="static/js/jquery-2.2.4.min.js"></script>
+    <!--<script src="js/popper.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcfEdcYv9wIuEaCZnhuEowbh0Xc3G0OAQ"></script>-->
+    <script src="static/js/jquery-ui.js"></script>
+    <script src="static/js/easing.min.js"></script>
+    <script src="static/js/hoverIntent.js"></script>
+    <script src="static/js/superfish.min.js"></script>
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <script src="static/js/mail-script.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
+<script src="static/js/console-ban.min.js"></script>
+
 </html>
